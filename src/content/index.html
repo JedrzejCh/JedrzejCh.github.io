@@ -17,6 +17,8 @@
   <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
 
   <meta name="apple-mobile-web-app-capable" content="yes" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,600&display=swap&subset=latin-ext" rel="stylesheet">
+
   <link rel="stylesheet" href="css/main.css" />
 </head>
 
@@ -25,14 +27,18 @@
     <img src="assets/img/me.jpg" alt="page author Jędrzej Choniawko" class="header__pic header__pic--framed" />
     <h1 class="header__h1">Hey there! 👋 My name is Jędrzej and I’m an aspiring Frontend developer and a keen Star Wars
       fan.</h1>
-    <p class="header__paragraph">You might be interested in checking the list of <strong>my skills</strong>. Don’t
-      forget to have a glimpse at <strong>my projects</strong>. Currently I’m looking for a new challenges so if you
-      have one - <strong>contact me</strong>😊</p>
-    <a href="" class="header__email">jchoniawko@gmail.com</a>
+    <p class="header__paragraph">You might be interested in checking the list of
+      <a href="" class="header__anchor">my skills</a>. Don’t
+      forget to have a glimpse at <a href="" class="header__anchor">my projects</a>. Currently I’m looking for a new
+      challenges so if you
+      have one - <a href="" class="header__anchor">contact me</a>.</p>
+    <a href="mailto: jchoniawko@gmail.com" class="header__email">jchoniawko@gmail.com</a>
   </header>
   <section class="skills">
-    <div class="skills__part">
-      <h3 class="skills__h3">Working knowledge</h2>
+    <h2 class="skills__h2">My skills</h2>
+    <div class="skills_container">
+      <div class="skills__part">
+        <h3 class="skills__h3">Working knowledge</h3>
         <ul class="skills__list">
           <li>Semantic HTML</li>
           <li>Flexbox</li>
@@ -44,9 +50,9 @@
           <li>JS: DOM manipulations</li>
           <li>SASS</li>
         </ul>
-    </div>
-    <div class="skills__part">
-      <h3 class="skills__h3">Know something about</h2>
+      </div>
+      <div class="skills__part">
+        <h3 class="skills__h3">Know something about</h3>
         <ul class="skills__list">
           <li>ES6 + features</li>
           <li>CSS animations</li>
@@ -56,9 +62,9 @@
           <li>GIT</li>
           <li>Accessibility</li>
         </ul>
-    </div>
-    <div class="skills__part">
-      <h3 class="skills__h3">Want to learn</h2>
+      </div>
+      <div class="skills__part">
+        <h3 class="skills__h3">Want to learn</h3>
         <ul class="skills__list">
           <li>React JS</li>
           <li>Node.JS</li>
@@ -67,6 +73,7 @@
           <li>Gatsby</li>
           <li>Typescript</li>
         </ul>
+      </div>
     </div>
   </section>
   <section class="projects">
@@ -111,7 +118,7 @@
       <li></li>
       <li></li>
     </ul>
-    <a href="" class="footer__email">jchoniawko@gmail.com</a>
+    <a href="mailto: jchoniawko@gmail.com" class="footer__email">jchoniawko@gmail.com</a>
 
   </footer>
   <script src="js/main.js"></script>
