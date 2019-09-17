@@ -1,40 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Site title</title>
-    <meta name="description" content="Description" />
 
-    <!-- Title -->
-    <meta property="og:title" content="" />
-    <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
-    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta property="og:url" content="" />
-    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
-    <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>my page</title>
+  <meta name="description" content="Description" />
 
-    <link rel="manifest" href="manifest.json" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <link
-      rel="apple-touch-icon"
-      sizes="192x192"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
+  <!-- Title -->
+  <meta property="og:title" content="" />
+  <!-- OPTIONAL description. 2-4 sentences. -->
+  <meta property="og:description" content="" />
+  <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
+  <meta property="og:url" content="" />
+  <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
 
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body>
-    <h1>Hello world - with simple PWA support!</h1>
+<body>
+  <header class="header">
+    <img src="assets/img/me.jpg" alt="page author Jędrzej Choniawko" class="header__pic header__pic--framed" />
+    <h1 class="header__h1">Hey there! 👋 My name is Jędrzej and I’m an aspiring Frontend developer and a keen Star Wars
+      fan.</h1>
+    <p class="header__paragraph">You might be interested in checking the list of <strong>my skills</strong>. Don’t
+      forget to have a glimpse at <strong>my projects</strong>. Currently I’m looking for a new challenges so if you
+      have one - <strong>contact me</strong>😊</p>
+    <a href="" class="header__email">jchoniawko@gmail.com</a>
+  </header>
+  <section class="skills">
+    <div class="skills__part">
+      <h3 class="skills__h3">Working knowledge</h2>
+        <ul class="skills__list">
+          <li>Semantic HTML</li>
+          <li>Flexbox</li>
+          <li>Markdown</li>
+          <li>JS: local storage</li>
+          <li>Figma</li>
+          <li>CSS Grid</li>
+          <li>Forms</li>
+          <li>JS: DOM manipulations</li>
+          <li>SASS</li>
+        </ul>
+    </div>
+    <div class="skills__part">
+      <h3 class="skills__h3">Know something about</h2>
+        <ul class="skills__list">
+          <li>ES6 + features</li>
+          <li>CSS animations</li>
+          <li>Working with API</li>
+          <li>NPM Scripts</li>
+          <li>Progressive Web Apps</li>
+          <li>GIT</li>
+          <li>Accessibility</li>
+        </ul>
+    </div>
+    <div class="skills__part">
+      <h3 class="skills__h3">Want to learn</h2>
+        <ul class="skills__list">
+          <li>React JS</li>
+          <li>Node.JS</li>
+          <li>Electron</li>
+          <li>Server side rendering</li>
+          <li>Gatsby</li>
+          <li>Typescript</li>
+        </ul>
+    </div>
+  </section>
+  <section class="projects">
+    <h2 class="projects__h2">Recent projects</h2>
+    <p class="projects__paragraph">I started my frontend developer path in 2018. Since then, I’ve built some projects.
+      Here’s the list of the things I’ve done so far.</p>
 
-    <script src="js/main.js"></script>
-  </body>
+    <div class="project-card">
+      <img src="" alt="Github logo" class="project-card__icon">
+      <h4 class="project-card__h4">project title</h4>
+      <p class="project-card__paragraph">project description</p>
+      <button class="project-card__btn">demo</button>
+      <button class="project-card__btn">Github</button>
+    </div>
+    <div class="project-card">
+      <img src="" alt="Github logo" class="project-card__icon">
+      <h4 class="project-card__h4">project title</h4>
+      <p class="project-card__paragraph">project description</p>
+      <button class="project-card__btn">demo</button>
+      <button class="project-card__btn">Github</button>
+    </div>
+    <div class="project-card">
+      <img src="" alt="Github logo" class="project-card__icon">
+      <h4 class="project-card__h4">project title</h4>
+      <p class="project-card__paragraph">project description</p>
+      <button class="project-card__btn">demo</button>
+      <button class="project-card__btn">Github</button>
+    </div>
+    <div class="project-card">
+      <img src="" alt="Github logo" class="project-card__icon">
+      <h4 class="project-card__h4">project title</h4>
+      <p class="project-card__paragraph">project description</p>
+      <button class="project-card__btn">demo</button>
+      <button class="project-card__btn">Github</button>
+    </div>
+  </section>
+  <footer class="footer">
+    <h2 class="footer__h2">Contact me</h2>
+    <p class="footer__paragraph">I’m open for new opportunities. If you have one for me we should talk!</p>
+    <ul class="footer_icons">
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <a href="" class="footer__email">jchoniawko@gmail.com</a>
+
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
