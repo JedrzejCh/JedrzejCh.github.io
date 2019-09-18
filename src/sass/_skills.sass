@@ -1,21 +1,53 @@
 .skills
-  // display: flex
-  // flex-direction: column
-  // align-items: center
-  // justify-content: center
   margin: 0 auto
   height: 100vh
   width: 87vw
 .skills__h2
   font-size: 2rem
   text-align: left
-
 .skills__part
   display: grid
-  grid-template-columns: 40% 30% 30%
-  grid-column-gap: 20px
-  height: 20vh
+  grid-template-columns: 40% 60%
+  grid-column-gap: 4rem
 .skills_container
   border-top: 2px solid rgba(203, 210, 217, 0.6);
   padding-top: 15vh
+.skills__list
+  display: grid
+  grid-template-columns: 50% 50%  
+  grid-row-gap: 0.5rem
+  list-style: none
+  font-size: 1rem
+.skills__list--green 
+  list-style-image: url("../assets/img/circleGreen.png")
+.skills__list--purple  
+  list-style-image: url("../assets/img/circlePurple.png")
+.skills__list--blue
+  list-style-image: url("../assets/img/circleBlue.png")
+.skills__part--ousted
+  margin: 5rem 0
+
+.skills__h3--green
+  &::before
+    content: ""
+    border-top: 2px solid #06C847
+    // height: 2px
+    width: 50px
+    display: block
+.skills__h3--purple
+  &::before
+    content: ""
+    border-top: 2px solid #653CAD
+    // height: 2px
+    width: 50px
+    display: block
+.skills__h3--blue
+  &::before
+    content: ""
+    border-top: 2px solid #2251CC
+    // height: 2px
+    width: 50px
+    display: block
+h3.skills_h3
+  font-size: 2rem
   
