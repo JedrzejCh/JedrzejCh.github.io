@@ -191,7 +191,7 @@ html {
 
 .skills {
   margin: 0 auto;
-  height: 100vh;
+  height: auto;
   width: 87vw; }
 
 .skills__h2 {
@@ -205,9 +205,9 @@ html {
   grid-template-columns: 40% 60%;
   grid-column-gap: 4rem; }
 
-.skills_container {
+.skills__container {
   border-top: 2px solid rgba(203, 210, 217, 0.6);
-  padding-top: 15vh; }
+  padding-top: 7rem; }
 
 .skills__list {
   display: -ms-grid;
@@ -216,7 +216,8 @@ html {
   grid-template-columns: 50% 50%;
   grid-row-gap: 0.5rem;
   list-style: none;
-  font-size: 1rem; }
+  font-size: 1rem;
+  margin-top: 0; }
 
 .skills__list--green {
   list-style-image: url("../assets/img/circleGreen.png"); }
@@ -228,27 +229,64 @@ html {
   list-style-image: url("../assets/img/circleBlue.png"); }
 
 .skills__part--ousted {
-  margin: 5rem 0; }
+  margin: 7rem 0; }
+
+.skills__h3 {
+  font-size: 1.7rem;
+  color: #171F3F;
+  margin-top: -1.5rem; }
 
 .skills__h3--green::before {
   content: "";
-  border-top: 2px solid #06C847;
-  width: 50px;
-  display: block; }
+  border-top: 3px solid #06C847;
+  width: 4rem;
+  display: block;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem; }
 
 .skills__h3--purple::before {
   content: "";
-  border-top: 2px solid #653CAD;
-  width: 50px;
-  display: block; }
+  border-top: 3px solid #653CAD;
+  width: 4rem;
+  display: block;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem; }
 
 .skills__h3--blue::before {
   content: "";
-  border-top: 2px solid #2251CC;
-  width: 50px;
-  display: block; }
+  border-top: 3px solid #2251CC;
+  width: 4rem;
+  display: block;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem; }
 
-h3.skills_h3 {
-  font-size: 2rem; }
+li {
+  line-height: 1.5rem; }
+
+.projects {
+  background-color: #F5F7FA;
+  padding: 3rem 0;
+  margin-top: 4rem; }
+
+.projects__wrapper {
+  margin: 0 auto;
+  height: auto;
+  max-width: 87vw; }
+
+.projects__h2 {
+  font-size: 2rem;
+  text-align: left; }
+
+.projects__grid {
+  display: -ms-grid;
+  display: grid; }
+
+.project-card {
+  width: 30vw;
+  height: auto;
+  padding: 2rem;
+  -webkit-box-shadow: 0px 0.5rem 1rem rgba(24, 41, 67, 0.09);
+          box-shadow: 0px 0.5rem 1rem rgba(24, 41, 67, 0.09);
+  border-radius: 0.5rem; }
 
 /*# sourceMappingURL=main.css.map */
