@@ -13,7 +13,7 @@ fetch("https://api.github.com/users/JedrzejCh/repos")
     const repos = resp;
 
     for (const repo of repos) {
-      const { description, homepage, html_url, name } = repo;
+      const { description, html_url, name, has_pages } = repo;
       console.log(repo)
       gridCards.innerHTML += `
 <div class="project-card">
@@ -21,12 +21,11 @@ fetch("https://api.github.com/users/JedrzejCh/repos")
           <h4 class="project-card__h4">${name}</h4>
           <p class="project-card__paragraph">${description}</p>
           <div class="list-wrapper">
-            <ul class="list-wrapper--ul">
+            <ul class="list-wrapper__ul">
           ${
-        name ? `<li class="list-wrapper--li"><a href="https://jedrzejch.github.io/${name}/" target="_blank" rel="no follow no referrer" class="list-wrapper--demo">Demo</a></li>` : 'xd'
+        has_pages ? `<li class="list-wrapper__li"><a href="https://jedrzejch.github.io/${name}/" target="_blank" rel="no follow no referrer" class="list-wrapper__a list-wrapper__a--demo">Demo</a></li>` : ''
         }
-        
-              <li class="list-wrapper--li"><a href="${html_url}" target="_blank" rel="no follow no referrer" class="list-wrapper--github">Github</a></li>
+              <li class="list-wrapper--li"><a href="${html_url}" target="_blank" rel="no follow no referrer" class="list-wrapper__a list-wrapper__a--github">Github</a></li>
             </ul>
           </div>
         </div>
@@ -37,3 +36,4 @@ fetch("https://api.github.com/users/JedrzejCh/repos")
   .catch(err => {
     console.log(err)
   })
+

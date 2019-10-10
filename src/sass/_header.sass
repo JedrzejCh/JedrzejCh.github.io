@@ -1,18 +1,36 @@
+@keyframes pulse 
+  0%
+    border-color: transparent
+  50%
+    border-color: rgba(203,210,217,0.6)
+  100%
+    border-color: transparent  
+
+ 
 body
   border: .6rem solid #171F3F
 html  
   font-family: Poppins
   box-sizing: border-box
+  scroll-behavior: smooth
 .header
   height: 95vh
   max-width: 55vw
-  margin: 5rem 0 0 5rem
+  margin: 4rem 0 0 5rem
 .header__pic
   width: 140px
   height: 140px
+.header__pic--framed
   border: .4rem solid rgba(203,210,217,0.6)
   border-radius: 50%  
   padding: .3rem
+  animation-name: pulse
+  animation-duration: 3.5s
+  animation-delay: 1s
+  animation-fill-mode: both
+  animation-iteration-count: infinite
+  animation-direction: normal
+  animation-timing-function: linear
 .header__h1
   font-weight: 600
   font-size: 2.3rem
@@ -26,10 +44,42 @@ html
   color: #52606D
 .header__anchor
   color: #0593FB
-  text-decoration: underline  
+  text-decoration: none
 .header__email
   color: #0593FB
   border-bottom: 2px solid #0593FB
   text-decoration: none
+
+@media (max-width : 375px)
+  .header
+    height: 90vh
+    max-width: 80vw
+    margin: 0 auto
+    padding-top: 1.5rem
+    display: flex
+    flex-direction: column
+    align-items: center
+  .header__pic
+    margin: 0 auto  
+    display: block
+  .header__h1
+    font-size: 1.8rem 
+    line-height: 1.7rem
+    margin-bottom: 0
+    margin-top: .8rem
+    align-self: start
+  .header__paragraph
+    font-size: 1rem
+    line-height: 1.15rem 
+    margin-bottom: 1.5rem 
+  .header__anchor
+    text-decoration: underline
+  .header__email
+    font-size: 1rem
+ 
+  
+  
+
+
   
   
