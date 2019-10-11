@@ -5,16 +5,26 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>JedrzejCh- Homepage</title>
+  <title>JedrzejCh - Hello_world!</title>
   <meta name="description" content="My personal site with my projects list and skills" />
   <meta property="og:title" content="Jedrzej Choniawko Homepage" />
   <meta property="og:description" content="My personal site with my projects list and skills" />
   <meta property="og:url" content="https://JedrzejCh.github.io" />
   <meta property="og:image" content="https://JedrzejCh.github.io/assets/img/cover.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="../assets/img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="../assets/img/favicon/favicon.ico" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,500,600&display=swap&subset=latin-ext"
     rel="stylesheet">
 
+  <!-- <link rel="stylesheet" href="css/form.css"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://www.google.com/recaptcha/api.js"></script>
   <link rel="stylesheet" href="css/main.css" />
 </head>
 
@@ -29,8 +39,8 @@
       forget to have a glimpse at <a href="#projects" class="header__anchor">my projects</a>. Currently I’m looking for
       a new
       challenges so if you
-      have one - <a href="#contact" class="header__anchor">contact me</a>.</p>
-    <a href="mailto: jchoniawko@gmail.com" class="header__email">jchoniawko@gmail.com</a>
+      have one - <a href="#footer" class="header__anchor">contact me</a>.</p>
+    <a href="mailto:jchoniawko@gmail.com" class="header__email">jchoniawko@gmail.com</a>
   </header>
   <section id="skills" class="skills">
     <h2 class="skills__h2">My skills</h2>
@@ -84,7 +94,7 @@
       </div>
     </div>
   </section>
-  <footer id="contact" class="footer">
+  <footer id="footer" class="footer">
     <div class="footer__wrapper">
       <h2 class="footer__h2">Contact me</h2>
       <p class="footer__paragraph">I’m open for new opportunities, hardworking and disciplined. If you have new
@@ -94,18 +104,57 @@
         me here:</p>
       <ul class="footer__icons">
         <li>
-          <a href="https://www.facebook.com/jedrek.choniawko" target="_blank" rel="no follow no referrer" class="footer__icon footer__icons-fb"></a>
+          <a href="https://www.facebook.com/jedrek.choniawko" target="_blank" rel="nofollow noreferrer" class="footer__icon footer__icons-fb"></a>
         </li>
         <li>
-          <a href="https://github.com/JedrzejCh" target="_blank" rel="no follow no referrer" class="footer__icon footer__icons-gh"></a>
+          <a href="https://github.com/JedrzejCh" target="_blank" rel="nofollow noreferrer" class="footer__icon footer__icons-gh"></a>
         </li>
         <li>
-          <a href="https://www.instagram.com/jedrzej_c/" target="_blank" rel="no follow no referrer" class="footer__icon footer__icons-insta"></a>
+          <a href="https://www.instagram.com/jedrzej_c/" target="_blank" rel="nofollow noreferrer" class="footer__icon footer__icons-insta"></a>
         </li>
       </ul>
-      <a href="mailto: jchoniawko@gmail.com" class="footer__email">jchoniawko@gmail.com</a>
+      <a href="mailto:jchoniawko@gmail.com" class="footer__email">jchoniawko@gmail.com</a>
     </div>
+
+    <button id="open-contact-btn" class="main-btn">
+      <i class="fa fa-envelope-o" aria-hidden="true"></i> Formularz kontaktowy
+    </button>
+
   </footer>
+
+  <div id="formularz-kontaktowy" class="contact" role="dialog" aria-label="formularz kontaktowy" aria-hidden="true">
+    <form class="emailForm" method="POST" action="jchoniawko@gmail.com">
+      <label class="half" aria-live="polite">
+        Email adress
+        <input class="form-data" name="email" type="email" required>
+      </label>
+      <label class="half" aria-live="polite">
+        Subject
+        <input class="form-data" name="_subject" minlength="4" maxlength="78" required>
+      </label>
+      <label aria-live="polite">
+        Text
+        <textarea class="form-data" name="message" minlength="4" maxlength="6000" required></textarea>
+      </label>
+      <label class="recaptcha-label" aria-live="polite">
+        <div class="g-recaptcha" tabindex="-1" data-sitekey="6LcuJr0UAAAAACiJScK8vBPkfGRqRwloF03iDVHx"
+          data-callback="recaptchaClearErr"></div>
+      </label>
+      <button class="emailFormSubmit main-btn" name="submit" type="submit">Send</button>
+
+      <div class="emailFormAlert" aria-live="polite"></div>
+    </form>
+
+    <button type="button" id="close-contact-btn" class="close-btn" aria-label="Zamknij formularz kontaktowy"
+      title="Zamknij formularz kontaktowy">
+      <i class="fa fa-times close-form"></i>
+    </button>
+  </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
 </body>
 

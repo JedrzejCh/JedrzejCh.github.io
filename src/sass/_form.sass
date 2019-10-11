@@ -1,0 +1,255 @@
+.contact
+  display: none
+  position: fixed
+  width: 97%
+  top: 50%
+  left: 50%
+  -webkit-transform: translate(-50%, -50%) translateZ(1000px)
+  -moz-transform: translate(-50%, -50%) translateZ(1000px)
+  -ms-transform: translate(-50%, -50%) translateZ(1000px)
+  -o-transform: translate(-50%, -50%) translateZ(1000px)
+  transform: translate(-50%, -50%) translateZ(1000px)
+  background-color: #fafafa
+  border: 2px solid #ccc
+  border-radius: 10px
+  padding: 40px 25px 0 25px
+  text-align: center
+  box-shadow: 0 0 0px 100vw rgba(0, 0, 0, 0.55), 0 0 13px 1px black
+  font-size: calc(16px + (25 - 20) * ((100vw - 320px)/ (1920 - 320)))
+  z-index: 999
+  background-color: #F5F7FA
+  .close-btn
+    position: absolute
+    top: 15px
+    right: 10px
+    background: none
+    border: 0
+    color: dimgrey
+    font-size: 1.2em
+    color: #171F3F
+
+
+.emailForm
+  label
+    display: block
+    font-weight: 700
+    margin: 0 0 30px
+    color: #555
+
+    &.half
+      display: inline-block
+      width: 49.4%
+
+  textarea
+    display: block
+    padding: 5px
+    border-top-left-radius: 3px
+    border-top-right-radius: 3px
+    border-bottom-right-radius: 3px
+    width: 100%
+    margin: 0
+    height: 20vh
+    resize: none
+    color: #555
+    font-size: inherit
+    font-weight: 300
+
+  input
+    display: block
+    width: 100%
+    margin-top: 5px
+    border-top-left-radius: 3px
+    border-top-right-radius: 3px
+    border-bottom-right-radius: 3px
+    font-size: inherit
+    font-weight: 300
+
+  .error
+    background: rgb(255, 107, 98)
+    position: absolute
+    margin: 0
+    display: block
+    animation: .5s slideTop
+    z-index: -1
+    border-top: 0 !important
+    border-bottom-right-radius: 3px
+    border-bottom-left-radius: 3px
+    max-width: 80%
+    padding: 0 5px
+    color: white
+    font-size: 0.8em
+    font-weight: 300
+
+  button[type=submit]
+    width: 40%
+    cursor: pointer
+    margin-top: 35px
+    font-size: 1.1em
+    font-weight: 300
+
+@media (max-width: 1200px)
+  .emailForm label.half
+    display: block
+    width: 100%
+
+
+@media (max-width: 500px)
+  .emailForm input
+    &[type="text"], &[type="email"]
+      display: block
+
+.g-recaptcha
+  margin: 35px 2px 0 0
+  border-top-left-radius: 3px
+  border-top-right-radius: 3px
+  border-bottom-right-radius: 3px
+
+.recaptcha-label
+  width: 306px
+  margin: auto !important
+  max-width: none
+
+
+
+.emailFormAlert
+  color: #ec3945
+  padding: 6px 0px
+  height: 50px
+  overflow: auto
+  font-weight: 300
+
+  .fa
+    color: #555
+
+.wrongInput
+  border: solid 1px #d80000
+
+@keyframes slideTop
+  0%
+    transform: translateY(-10px)
+
+  100%
+    transform: translateY(0px)
+
+.contact .close-btn:hover
+  cursor: pointer
+  outline: none
+
+
+  .emailForm textarea
+    height: 20vh
+    font-weight: 300
+
+.main-btn
+  background: #F5F7FA
+  border-radius: .5rem
+  color: #171F3F
+  display: inline-block
+  margin: 10px auto 10px auto
+  text-align: center
+  border: 0
+  cursor: pointer
+  padding: .5rem 1rem
+  box-shadow: 0 1px 4px 0 black
+
+  i
+    color: #171F3F
+
+  &:hover, &:focus
+    text-decoration: none
+    transform: translateY(-1px)
+    color: #ffffff
+    background: rgb(50, 50, 50)
+    box-shadow: 0 2px 8px 0 black
+
+  &:active
+    transform: translateY(+1px)
+    box-shadow: 0 1px 4px 0 black
+
+
+@media (max-width : 375px)
+  .contact
+    width: 70%
+    font-size: 1rem
+  .recaptcha-label
+    margin-left: -1.2rem !important
+  .emailForm textarea
+    height: 13vh
+    font-size: 0.9rem
+  input.form-data
+    font-size: 0.9rem
+  .main-btn
+    display: block
+    margin: 0 auto 
+    text-align: center
+    padding: .5rem 1rem
+  
+
+
+  
+
+
+@media (min-width : 410px) and (orientation: portrait)
+  .contact
+    width: 70%
+    font-size: 1rem
+  .recaptcha-label
+    margin-left: -.5rem !important
+  .emailForm textarea
+    height: 13vh
+    font-size: 0.9rem
+  input.form-data
+    font-size: 0.9rem
+  .main-btn
+    display: block
+    margin: 0 auto 
+    text-align: center
+    padding: .5rem 1rem
+
+
+
+@media (min-width : 768px) and (orientation: portrait)
+  .contact
+    width: 80%
+    font-size: 1.5rem
+  .recaptcha-label
+    margin-left: 9.6rem !important
+  .emailForm textarea
+    height: 13vh
+    font-size: 1.2rem
+  input.form-data
+    font-size: 1.2rem
+  .main-btn
+    display: block
+    margin: 0 auto
+    text-align: center
+    padding: .5rem 1rem
+
+
+@media (min-width: 640px) and (max-width:823px) and (orientation: landscape)
+  .contact
+    width: 75%
+    height: 90%
+    padding-top: 1.5rem
+    font-size: 1rem
+  .recaptcha-label
+    margin-left: 11.3rem !important 
+  label.half
+    margin-bottom: 0.5rem
+  label
+    margin-bottom: 0
+    font-weight: 300
+  .emailForm textarea
+    height: 13vh
+    font-weight: 300
+    font-size: .9rem
+  .emailForm button[type=submit]
+    width: 25%
+    position: absolute
+    bottom: 10%
+    left: 3%
+    background-color: #171F3F
+  input.form-data
+    font-weight: 300
+    font-size: 0.9rem
+    

@@ -4,6 +4,7 @@
 
 Hi, I'm glad you visited my profile. This project includes my home page.
 
+
 ![page screenshot](github/scr1.png)
 ![page screenshot](github/scr2.png)
 
@@ -18,4 +19,5 @@ Hi, I'm glad you visited my profile. This project includes my home page.
 - **CSS Grid**
 - **Flexbox**
 - **Canva**
+
 
