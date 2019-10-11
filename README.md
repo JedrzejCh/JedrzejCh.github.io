@@ -1,4 +1,4 @@
-![page cover](assets/img/cover.png)
+![page cover](../assets/img/cover.png)
 
 # Hello_world!
 
