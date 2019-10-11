@@ -5,8 +5,6 @@
     border-color: rgba(203,210,217,0.6)
   100%
     border-color: transparent  
-
- 
 body
   border: .6rem solid #171F3F
 html  
@@ -55,13 +53,15 @@ html
     height: 90vh
     max-width: 80vw
     margin: 0 auto
-    padding-top: 1.5rem
+    padding-top: 1.8rem
     display: flex
     flex-direction: column
     align-items: center
   .header__pic
     margin: 0 auto  
     display: block
+    width: 120px
+    height: 120px
   .header__h1
     font-size: 1.8rem 
     line-height: 1.7rem
@@ -76,8 +76,114 @@ html
     text-decoration: underline
   .header__email
     font-size: 1rem
- 
-  
+
+
+  .header
+    height: 90vh
+    max-width: 80vw
+    margin: 0 auto
+    display: flex
+    flex-direction: column
+    align-items: center
+
+@media (min-width : 410px) and (orientation: portrait)
+  .header
+    height: 90vh
+    max-width: 80vw
+    margin: 0 auto
+    padding-top: 3rem
+    display: flex
+    flex-direction: column
+    align-items: center
+  .header__pic
+    margin: 0 auto  
+    display: block
+  .header__h1
+    font-size: 2rem 
+    line-height: 1.9rem
+    margin-bottom: 0
+    margin-top: 2rem
+  .header__paragraph
+    font-size: 1.1rem
+    line-height: 1.3rem 
+    margin-bottom: 2.5rem 
+  .header__anchor
+    text-decoration: underline
+  .header__email
+    font-size: 1rem
+
+@media (min-width : 768px) and (orientation: portrait)
+  .header
+    height: 100vh
+    max-width: 80vw
+    margin: 0 auto
+    padding-top: 7rem
+    display: flex
+    flex-direction: column
+    align-items: center
+  .header__pic
+    margin: 0 auto  
+    display: block
+    width: 140px
+    height: 140px
+  .header__h1
+    font-size: 2.4rem 
+    line-height: 2.5rem
+    margin-bottom: 0
+    margin-top: 2rem
+  .header__paragraph
+    font-size: 1.5rem
+    line-height: 1.8rem 
+    margin-bottom: 5rem 
+    text-align: justify
+  .header__anchor
+    text-decoration: underline
+  .header__email
+    font-size: 1.5rem
+
+@media (min-width: 640px) and (max-width:823px) and (orientation: landscape) 
+  .header
+    height: 95vh
+    max-width: 90vw
+    margin: 1.6rem 0 0 2rem
+  .header__pic
+    width: 130px
+    height: 130px
+    float: left
+    margin-right: 1.5rem
+  .header__pic--framed
+    border: .4rem solid rgba(203,210,217,0.6)
+    border-radius: 50%  
+    padding: .3rem
+    animation-name: pulse
+    animation-duration: 3.5s
+    animation-delay: 1s
+    animation-fill-mode: both
+    animation-iteration-count: infinite
+    animation-direction: normal
+    animation-timing-function: linear
+  .header__h1
+    font-weight: 600
+    font-size: 1.9rem
+    line-height: 2.1rem
+    color: #171F3F
+  .header__paragraph
+    font-weight: 300
+    font-size: 1.1rem
+    line-height: 1.4rem
+    margin-bottom: 1.6rem
+    margin-top: 1.5rem
+    color: #52606D
+  .header__anchor
+    text-decoration: underline
+  .header__email
+    color: #0593FB
+    border-bottom: 2px solid #0593FB
+    text-decoration: none
+    
+    
+
+   
   
 
 

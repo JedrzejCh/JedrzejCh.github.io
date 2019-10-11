@@ -29,7 +29,7 @@
 .skills__part--ousted
   margin: 7rem 0
 .skills__h3
-  font-size: 1.7rem
+  font-size: 1.8rem
   color: #171F3F
   margin-top: -1.5rem
 .skills__h3--green
@@ -76,3 +76,64 @@ li
     padding-top: 6rem
   .skills__part--ousted
     margin: 4rem 0
+
+@media (min-width : 410px) and (orientation: portrait)
+  .skills__h2
+    font-size: 1.8rem
+  .skills__h3
+    font-size: 1.6rem  
+  .skills__part
+    grid-template-columns: 1fr 
+    grid-column-gap: 3rem
+  .skills__list
+    font-size: 1.1rem
+    font-weight: 300
+    grid-column-gap: 1.2rem
+    padding-left: 2rem
+  .skills__container
+    padding-top: 6rem
+  .skills__part--ousted
+    margin: 4rem 0
+
+@media (min-width : 768px) and (orientation: portrait)
+  .skills
+    padding-bottom: 2rem
+  .skills__h2
+    font-size: 2.2rem
+  .skills__h3
+    font-size: 2rem 
+    padding-bottom: 1rem 
+  .skills__part
+    grid-template-columns: 1fr 
+    grid-column-gap: 3rem
+  .skills__list
+    font-size: 1.3rem
+    font-weight: 300
+    grid-column-gap: 2rem
+    padding-left: 5rem
+  .skills__container
+    padding-top: 6rem
+  .skills__part--ousted
+    margin: 6rem 0
+
+@media (min-width: 640px) and (max-width:823px) and (orientation: landscape) 
+  .skills
+    padding-bottom: 1rem
+  .skills__h2
+    font-size: 1.7rem
+  .skills__h3
+    font-size: 1.5rem 
+    padding-bottom: 1rem 
+  .skills__part
+    grid-template-columns: 30% 60%
+    grid-column-gap: 1rem
+  .skills__list
+    font-size: 1.1rem
+    font-weight: 300
+    grid-column-gap: 3.6rem
+    grid-row-gap: 0.6rem
+    padding-left: 5rem
+  .skills__container
+    padding-top: 6rem
+  .skills__part--ousted
+    margin: 5rem 0
