@@ -6,7 +6,7 @@ const demoLinks = document.querySelectorAll(".list-wrapper--demo");
 const githubLinks = document.querySelectorAll(".list-wrapper--github");
 const gridCards = document.querySelector(".projects__grid--js");
 console.log(`Welcome to my site`);
-console.log("Hey 🙃 nice of you to come here. Now that you're here, let me introduce myself briefly. I am 23 years old and live in Wrocław. I'm nice and I don't have any problems with contact with people. I learn Frontend technology as much as I can and I enjoy it a lot. I really like to lern new things. Besides, I like to spend time actively. I like skiing very much, I like climbing, sailing and traveling.")
+console.log("Hey 🙃 nice of you to come here. Now that you're here, let me introduce myself briefly. I am 23 years old and live in Wrocław. I'm nice and I don't have any problems with contact with people. I learn Frontend technology and new things as much as I can and I enjoy it a lot. I often lose track of my time at the same time 😅. Besides, I like to spend time actively. I like skiing very much, I like climbing, sailing and traveling.")
 
 fetch("https://api.github.com/users/JedrzejCh/repos")
   .then(resp => resp.json())
