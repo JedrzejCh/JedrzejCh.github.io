@@ -10,13 +10,14 @@
   -o-transform: translate(-50%, -50%) translateZ(1000px)
   transform: translate(-50%, -50%) translateZ(1000px)
   background-color: #fafafa
-  border: 2px solid #ccc
+  // border: 0px solid #ccc
   border-radius: 10px
   padding: 40px 25px 0 25px
   text-align: center
-  box-shadow: 0 0 0px 100vw rgba(0, 0, 0, 0.55), 0 0 13px 1px black
+  box-shadow: 0 0 0px 100vw rgba(0, 0, 0, 0.45), 0px .2rem .5rem black
   font-size: calc(16px + (25 - 20) * ((100vw - 320px)/ (1920 - 320)))
   z-index: 999
+  overflow: hidden
   background-color: #F5F7FA
   .close-btn
     position: absolute
@@ -35,6 +36,7 @@
     font-weight: 700
     margin: 0 0 30px
     color: #555
+    
 
     &.half
       display: inline-block
@@ -58,9 +60,9 @@
     display: block
     width: 100%
     margin-top: 5px
-    border-top-left-radius: 3px
-    border-top-right-radius: 3px
-    border-bottom-right-radius: 3px
+    border-top-left-radius: 2px
+    border-top-right-radius: 2px
+    border-bottom-right-radius: 2px
     font-size: inherit
     font-weight: 300
 
@@ -86,12 +88,13 @@
     margin-top: 35px
     font-size: 1.1em
     font-weight: 300
+    background-color: #171F3F
+    color: #F5F7FA
 
 @media (max-width: 1200px)
   .emailForm label.half
     display: block
     width: 100%
-
 
 @media (max-width: 500px)
   .emailForm input
@@ -103,20 +106,18 @@
   border-top-left-radius: 3px
   border-top-right-radius: 3px
   border-bottom-right-radius: 3px
-
 .recaptcha-label
   width: 306px
   margin: auto !important
   max-width: none
-
-
-
 .emailFormAlert
-  color: #ec3945
+  color: #171F3F
   padding: 6px 0px
-  height: 50px
+  height: 5%
   overflow: auto
   font-weight: 300
+  background-color: transparent
+  margin: 0 auto
 
   .fa
     color: #555
@@ -141,26 +142,19 @@
     font-weight: 300
 
 .main-btn
-  background: #F5F7FA
+  background-color: #F5F7FA
   border-radius: .5rem
   color: #171F3F
-  display: inline-block
-  margin: 10px auto 10px auto
+  display: block
+  margin: 10px auto 0 auto
   text-align: center
   border: 0
   cursor: pointer
   padding: .5rem 1rem
   box-shadow: 0 1px 4px 0 black
-
+  
   i
     color: #171F3F
-
-  &:hover, &:focus
-    text-decoration: none
-    transform: translateY(-1px)
-    color: #ffffff
-    background: rgb(50, 50, 50)
-    box-shadow: 0 2px 8px 0 black
 
   &:active
     transform: translateY(+1px)
@@ -175,19 +169,39 @@
     margin-left: -1.2rem !important
   .emailForm textarea
     height: 13vh
+    width: 95%
+    margin: 0 auto
     font-size: 0.9rem
   input.form-data
-    font-size: 0.9rem
+    font-size: 1rem
+    width: 80%
+    margin: 0 auto
   .main-btn
     display: block
     margin: 0 auto 
     text-align: center
     padding: .5rem 1rem
+    background-color:  #F5F7FA
+    color: #171F3F
+    border: 2px solid white
+  .emailForm button[type=submit]
+    background-color: #171F3F
+    color: #F5F7FA 
+    border: none
+    margin-bottom: .5rem
+  .emailFormAlert
+    width: 65%
+    position: absolute
+    bottom: 7%
+    left: 19%
+    font-size: .7rem
+  label.half
+    font-size: .9rem
+  label
+    font-size: .9rem
   
 
-
   
-
 
 @media (min-width : 410px) and (orientation: portrait)
   .contact
@@ -197,14 +211,36 @@
     margin-left: -.5rem !important
   .emailForm textarea
     height: 13vh
+    width: 95%
+    margin: 0 auto
     font-size: 0.9rem
   input.form-data
-    font-size: 0.9rem
+    font-size: 1rem
+    width: 80%
+    margin: 0 auto
   .main-btn
     display: block
     margin: 0 auto 
     text-align: center
     padding: .5rem 1rem
+    background-color:  #F5F7FA
+    color: #171F3F
+    border: 2px solid white
+  .emailForm button[type=submit]
+    background-color: #171F3F
+    color: #F5F7FA 
+    border: none
+    margin-bottom: .5rem
+  .emailFormAlert
+    width: 65%
+    position: absolute
+    bottom: 7%
+    left: 19%
+    font-size: .7rem
+  label.half
+    font-size: .9rem
+  label
+    font-size: .9rem
 
 
 
@@ -216,40 +252,118 @@
     margin-left: 9.6rem !important
   .emailForm textarea
     height: 13vh
-    font-size: 1.2rem
+    width: 95%
+    margin: 0 auto
+    font-size: 1.1rem
   input.form-data
-    font-size: 1.2rem
+    font-size: 1.1rem
+    width: 80%
+    margin: 0 auto
   .main-btn
     display: block
-    margin: 0 auto
+    margin: 0 auto 
     text-align: center
     padding: .5rem 1rem
+    background-color:  #F5F7FA
+    color: #171F3F
+    border: 2px solid white
+  .emailForm button[type=submit]
+    background-color: #171F3F
+    color: #F5F7FA 
+    border: none
+    margin-bottom: .5rem
+  .emailFormAlert
+    width: 65%
+    position: absolute
+    bottom: 7%
+    left: 19%
+    font-size: .7rem
+  
 
 
 @media (min-width: 640px) and (max-width:823px) and (orientation: landscape)
   .contact
-    width: 75%
+    width: 70%
     height: 90%
     padding-top: 1.5rem
     font-size: 1rem
-  .recaptcha-label
-    margin-left: 11.3rem !important 
+  label.recaptcha-label 
+    position: absolute
+    display: block
+    bottom: 10%
+    right: 3%
   label.half
     margin-bottom: 0.5rem
   label
     margin-bottom: 0
     font-weight: 300
   .emailForm textarea
-    height: 13vh
+    height: 14vh
     font-weight: 300
     font-size: .9rem
+    width: 90%
+    margin : 0 auto
   .emailForm button[type=submit]
     width: 25%
     position: absolute
     bottom: 10%
-    left: 3%
+    left: 3%  
     background-color: #171F3F
+    color: #F5F7FA
   input.form-data
     font-weight: 300
-    font-size: 0.9rem
-    
+    font-size: 1rem
+    width: 75%
+    margin : 0 auto
+  .emailFormAlert
+    width: 40%
+    color: #171F3F
+    padding: 0
+    height: 4%
+    overflow: auto
+    font-weight: 300
+    background-color: transparent
+    position: absolute
+    bottom: 2%
+    right: 3%
+    font-size: .7rem
+
+@media (min-width: 1024px) 
+  .contact
+    width: 60%
+    height: 70%
+    padding-top: 4rem
+    font-size: 1rem
+  label.recaptcha-label
+    margin: 0 auto
+  label
+    margin-bottom: 1rem
+    font-weight: 300
+    font-size: 1.2rem
+  .emailForm textarea
+    height: 13vh
+    width: 80%
+    font-weight: 300
+    margin: 0 auto
+    font-size: .9rem
+  .main-btn
+    position: absolute
+    left: 0
+    bottom: 2%
+  .emailForm button[type=submit]
+    width: 180px
+    // margin: 1.5rem auto 
+    left: calc(50% - 90px)
+    bottom: 5%
+  input.form-data
+    font-weight: 300
+    font-size: .9rem 
+    width: 80%
+    margin: 1rem auto
+  .emailFormAlert
+    margin: 0 auto
+    display: block
+    font-size: 1rem
+
+  
+ 
