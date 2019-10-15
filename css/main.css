@@ -179,7 +179,7 @@ html {
 .header {
   height: 95vh;
   max-width: 55vw;
-  margin: 4rem 0 0 5rem;
+  margin: 8rem 0 0 5rem;
   overflow: hidden; }
 
 .header__pic {
@@ -228,6 +228,8 @@ html {
   text-decoration: none; }
 
 @media (max-width: 375px) {
+  body {
+    border: none; }
   .header {
     height: 90vh;
     max-width: 80vw;
@@ -281,6 +283,8 @@ html {
             align-items: center; } }
 
 @media (min-width: 410px) and (orientation: portrait) {
+  body {
+    border: none; }
   .header {
     height: 90vh;
     max-width: 80vw;
@@ -314,6 +318,8 @@ html {
     font-size: 1rem; } }
 
 @media (min-width: 768px) and (orientation: portrait) {
+  body {
+    border: none; }
   .header {
     height: 100vh;
     max-width: 80vw;
@@ -350,6 +356,8 @@ html {
     font-size: 1.5rem; } }
 
 @media (min-width: 640px) and (max-width: 823px) and (orientation: landscape) {
+  body {
+    border: none; }
   .header {
     height: 95vh;
     max-width: 90vw;
