@@ -890,7 +890,7 @@ li {
   height: auto;
   width: 100%;
   max-width: 87vw;
-  padding: 4rem 0;
+  padding: 6rem 0;
   position: relative; }
 
 .footer__h2 {
@@ -915,7 +915,7 @@ li {
   display: flex;
   list-style: none;
   padding: 0;
-  margin-bottom: 3rem; }
+  margin-bottom: 2rem; }
 
 .footer__icon {
   display: block;
@@ -1419,7 +1419,7 @@ li {
   .main-btn {
     position: absolute;
     left: 0;
-    bottom: 2%; }
+    bottom: 8%; }
   .emailForm button[type=submit] {
     width: 180px;
     left: calc(50% - 90px);
