@@ -178,8 +178,8 @@ html {
 
 .header {
   height: 95vh;
-  max-width: 55vw;
-  margin: 8rem 0 0 5rem;
+  max-width: 45vw;
+  margin: 5.5rem 0 0 5rem;
   overflow: hidden; }
 
 .header__pic {
@@ -207,20 +207,20 @@ html {
 
 .header__h1 {
   font-weight: 600;
-  font-size: 2.3rem;
+  font-size: 2.4rem;
   line-height: 46px;
   color: #171F3F; }
 
 .header__paragraph {
   font-weight: 300;
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 30px;
   margin-bottom: 4rem;
   color: #52606D; }
 
 .header__anchor {
   color: #0593FB;
-  text-decoration: none; }
+  text-decoration: underline; }
 
 .header__email {
   color: #0593FB;
