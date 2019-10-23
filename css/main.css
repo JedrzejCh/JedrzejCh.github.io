@@ -151,6 +151,10 @@ template {
 [hidden] {
   display: none; }
 
+body {
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased; }
+
 body::-webkit-scrollbar {
   width: 12px;
   overflow: hidden; }
@@ -1092,7 +1096,7 @@ li {
   left: 50%;
   -webkit-transform: translate(-50%, -50%) translateZ(1000px);
   -ms-transform: translate(-50%, -50%) translateZ(1000px);
-  transform: translate(-50%, -50%) translateZ(1000px);
+  transform: translate(-50%, -50%);
   background-color: #fafafa;
   border-radius: 10px;
   padding: 40px 25px 0 25px;
